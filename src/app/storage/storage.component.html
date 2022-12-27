@@ -1,1 +1,32 @@
-<p>storage works!</p>
+<!-- /*
+    * Author: Megyeri Márk Máté
+    * Copyright: 2022, Megyeri Márk Máté
+    * Group: Szoft II/N
+    * Date: 2022-12-27
+    * Github: https://github.com/megyerimark
+    */ -->
+
+    <h2 class="text-center mt-3">Adatok</h2>
+    <div class="container table-center">
+        <table class="table table-striped">
+            <thead class=" bg-black text-info">
+                <tr>
+                    <th>Név</th>
+                    <th>Megye</th>
+                    <th>Terület (KM2)</th>
+                    <th>Népesség (fő)></th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr *ngFor="let storage of storages">
+                    <td>{{storage.name}}</td>
+                    <td>{{storage.county}}</td>
+                    <td>{{storage.area}}</td>
+                    <td>{{storage.population}}</td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    

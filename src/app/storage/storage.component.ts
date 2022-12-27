@@ -19,13 +19,13 @@ import { Component, OnInit } from '@angular/core';
 export class StorageComponent implements OnInit {
   
 
-  data:any = []
+storages: any;
 
   constructor() { }
 
   ngOnInit(): void {
 
-    this.data = [
+    this.storages = [
       {name: "Székesfehérvár", county:"Fejér", area:170.89,population:  95545 },
       {name: "Szombathely", county: "Vas", area: 97.5, population:	78324},
       {name: "Sopron", county: "Győr-Moson-Sopron", area: 169.04, population: 62900},
